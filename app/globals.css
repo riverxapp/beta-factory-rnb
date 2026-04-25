@@ -20,12 +20,6 @@
     --accent-foreground: 252 87% 30%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    --success: 142 71% 45%;
-    --success-foreground: 0 0% 100%;
-    --warning: 38 92% 50%;
-    --warning-foreground: 0 0% 100%;
-    --info: 199 89% 48%;
-    --info-foreground: 0 0% 100%;
     --border: 252 10% 88%;
     --input: 252 10% 88%;
     --ring: 252 87% 64%;
@@ -51,12 +45,6 @@
     --accent-foreground: 252 87% 80%;
     --destructive: 0 63% 31%;
     --destructive-foreground: 0 0% 100%;
-    --success: 142 71% 35%;
-    --success-foreground: 0 0% 100%;
-    --warning: 38 92% 40%;
-    --warning-foreground: 0 0% 100%;
-    --info: 199 89% 38%;
-    --info-foreground: 0 0% 100%;
     --border: 252 10% 20%;
     --input: 252 10% 20%;
     --ring: 252 87% 64%;
@@ -69,6 +57,10 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground antialiased;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
@@ -77,10 +69,6 @@
   ::selection {
     background-color: hsl(var(--primary) / 0.3);
     color: hsl(var(--primary));
-  }
-
-  html {
-    scroll-behavior: smooth;
   }
 }
 
