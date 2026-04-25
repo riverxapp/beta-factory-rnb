@@ -1,17 +1,3 @@
-1. Patch plan: The build error originates from `app/globals.css` containing HTML instead of valid CSS. The root cause is the file `globals.css` (in the project root) was copied into `app/globals.css`. The fix is to replace the content of `app/globals.css` with proper Tailwind CSS. No changes needed to `app/page.tsx`—it remains valid.
-
-2. File changes:
-   - Replace `app/globals.css` content with valid Tailwind CSS directives and CSS custom properties.
-
-3. Dependency changes: None.
-
-4. Validation steps:
-   - Run `pnpm build` to ensure no syntax errors.
-   - Verify the app renders the homepage correctly.
-
-Final file content for `app/globals.css`:
-
-```css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -127,4 +113,3 @@ Final file content for `app/globals.css`:
     );
   }
 }
-```
