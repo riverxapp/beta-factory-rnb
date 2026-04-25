@@ -15,7 +15,6 @@
    title: "LiteStack Technologies | Modern Digital Agency",
    description:
      "LiteStack Technologies is a modern digital agency specializing in web development, UI/UX design, and scalable cloud solutions. Build faster with LiteStack.",
-@@ -15,27 +15,45 @@
  
  function Header() {
    return (
